@@ -20,32 +20,21 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    int x;
-    int choice;
-    cout << "Please input a number for x: ";
+    int x, xOriginal;
+    cout << "Enter an integer for x: ";
     cin >> x;
-    cout << endl;
-    cout << "What do you want to do with x?" << endl;
-    cout << "1. x -= 4*5" << endl;
-    cout << "2. x %= 16/2" << endl;
-    cout << "3. x /= 82%4" << endl;
-    cout << "Please select a number: ";
-    cin >> choice;
-    cout << endl;
+    xOriginal = x;
 
-    if (choice == 1) {
-        x -= 4 * 5;
-    }
-    else if (choice == 2) {
-        x %= (16 / 2);
-    }
-    else if (choice == 3) {
-        x /= 82%4;
-    }
-    else {
-        x = 0;
-    }
-    cout << "x: " << x;
+    x -= 4 * 5;
+    cout << x << endl;
+    x = xOriginal;
+    
+    x %= (16 / 2);
+    cout << x << endl;
+    x = xOriginal;
+    
+    x /= 82 % 4;
+    cout << x << endl;
 
     return 0;
 }

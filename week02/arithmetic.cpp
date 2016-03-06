@@ -21,7 +21,7 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     int x, xOriginal;
-    cout << "Enter an integer for x: ";
+    cout << "Enter an integer for x: \n";
     cin >> x;
     xOriginal = x;
 

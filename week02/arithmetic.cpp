@@ -20,7 +20,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    double x;
+    int x;
     int choice;
     cout << "Please input a number for x: ";
     cin >> x;

@@ -20,7 +20,16 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
+    char side_left, side_right, eye, nose, mouth;
+    
+    cout << "Enter five characters (side_left, side_right, eye, nose, mouth): ";
+    cin >> side_left >> side_right >> eye >> nose >> mouth;
+    cout << endl;
+    cout << side_left << "     " << side_right << endl;
+    cout << eye << "     " << eye << endl;
+    cout << "   " << nose << "   " << endl;
+    cout << side_right << "  " << mouth << "  " << side_left;
+        
     return 0;
 }
 

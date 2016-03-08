@@ -39,6 +39,10 @@ using namespace std;
 int main(int argc, char** argv) {
     int a1max, a1weight, a2max, a2weight, a3max, a3weight, a4max, a4weight;
     double a1mark, a2mark, a3mark, a4mark, finalmark;
+   
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(4);
     
     cout << "a1max: ";
     cin >> a1max;
@@ -54,7 +58,7 @@ int main(int argc, char** argv) {
     cin >> a3weight;
     cout << "\na4max";
     cin >> a4max;
-    cout << "a4weight";
+    cout << "\na4weight";
     cin >> a4weight;
     
     cout << "a1mark: ";
@@ -69,6 +73,7 @@ int main(int argc, char** argv) {
     finalmark = (a1mark*a1weight/a1max) + (a2mark*a2weight/a2max) + (a3mark*
             a3weight/a3max) + (a4mark*a4weight/a4max);
     finalmark = finalmark/100;
+   
     
     cout << "finalmark: " << finalmark << endl;
     

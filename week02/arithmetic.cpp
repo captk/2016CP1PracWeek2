@@ -19,7 +19,7 @@ using namespace std;
 /*
  * 
  */
-int main(int argc, char** argv) {
+int main2(int argc, char** argv) {
     double x;
     int choice;
     cout << "Please input a number for x: ";

@@ -36,7 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/age.o \
-	${OBJECTDIR}/arithmetic.o
+	${OBJECTDIR}/arithmetic.o \
+	${OBJECTDIR}/mark.o
 
 
 # C Compiler Flags
@@ -72,6 +73,11 @@ ${OBJECTDIR}/arithmetic.o: arithmetic.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arithmetic.o arithmetic.cpp
+
+${OBJECTDIR}/mark.o: mark.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mark.o mark.cpp
 
 # Subprojects
 .build-subprojects:

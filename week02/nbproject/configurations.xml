@@ -13,8 +13,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>age.cpp</itemPath>
+      <itemPath>area.cpp</itemPath>
       <itemPath>arithmetic.cpp</itemPath>
       <itemPath>mark.cpp</itemPath>
+      <itemPath>sum.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -40,9 +42,13 @@
       </compileType>
       <item path="age.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="area.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="arithmetic.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mark.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sum.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -67,9 +73,13 @@
       </compileType>
       <item path="age.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="area.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="arithmetic.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mark.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sum.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

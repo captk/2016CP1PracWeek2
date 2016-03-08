@@ -36,8 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/age.o \
+	${OBJECTDIR}/area.o \
 	${OBJECTDIR}/arithmetic.o \
-	${OBJECTDIR}/mark.o
+	${OBJECTDIR}/mark.o \
+	${OBJECTDIR}/sum.o
 
 
 # C Compiler Flags
@@ -69,6 +71,11 @@ ${OBJECTDIR}/age.o: age.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/age.o age.cpp
 
+${OBJECTDIR}/area.o: area.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/area.o area.cpp
+
 ${OBJECTDIR}/arithmetic.o: arithmetic.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -78,6 +85,11 @@ ${OBJECTDIR}/mark.o: mark.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mark.o mark.cpp
+
+${OBJECTDIR}/sum.o: sum.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/sum.o sum.cpp
 
 # Subprojects
 .build-subprojects:

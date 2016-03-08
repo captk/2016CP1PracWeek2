@@ -21,10 +21,18 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    double pmt = 10000;
-    double i = 0.08;
-    int n = 20;
+    double pmt;
+    double i;
+    int n;
     double pv;
+    
+    cout << "Please enter your desired periodic payment: ";
+    cin >> pmt;
+    cout << "Please enter the interest rate: ";
+    cin >> i;
+    cout << "Please enter desired number of payments: ";
+    cin >> n;
+            
     
     pv = pmt * ((1-(1/pow(1 + i, n)))/i);
     

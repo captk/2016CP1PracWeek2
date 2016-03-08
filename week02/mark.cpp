@@ -36,7 +36,7 @@ using namespace std;
 /*
  * 
  */
-int main(int argc, char** argv) {
+int main3(int argc, char** argv) {
     int a1max, a1weight, a2max, a2weight, a3max, a3weight, a4max, a4weight;
     double a1mark, a2mark, a3mark, a4mark, finalmark;
    

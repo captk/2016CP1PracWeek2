@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/annuity.o \
 	${OBJECTDIR}/area.o \
 	${OBJECTDIR}/arithmetic.o \
+	${OBJECTDIR}/face.o \
 	${OBJECTDIR}/mark.o \
 	${OBJECTDIR}/sum.o
 
@@ -86,6 +87,11 @@ ${OBJECTDIR}/arithmetic.o: arithmetic.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arithmetic.o arithmetic.cpp
+
+${OBJECTDIR}/face.o: face.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/face.o face.cpp
 
 ${OBJECTDIR}/mark.o: mark.cpp 
 	${MKDIR} -p ${OBJECTDIR}

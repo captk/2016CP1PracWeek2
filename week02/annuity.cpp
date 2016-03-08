@@ -20,7 +20,7 @@ using namespace std;
 /*
  * 
  */
-int main(int argc, char** argv) {
+int main6(int argc, char** argv) {
     double pmt;
     double i;
     int n;

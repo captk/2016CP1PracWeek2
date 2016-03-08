@@ -16,6 +16,7 @@
       <itemPath>annuity.cpp</itemPath>
       <itemPath>area.cpp</itemPath>
       <itemPath>arithmetic.cpp</itemPath>
+      <itemPath>face.cpp</itemPath>
       <itemPath>mark.cpp</itemPath>
       <itemPath>sum.cpp</itemPath>
     </logicalFolder>
@@ -49,6 +50,8 @@
       </item>
       <item path="arithmetic.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="face.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="mark.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="sum.cpp" ex="false" tool="1" flavor2="0">
@@ -81,6 +84,8 @@
       <item path="area.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="arithmetic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="face.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mark.cpp" ex="false" tool="1" flavor2="0">
       </item>

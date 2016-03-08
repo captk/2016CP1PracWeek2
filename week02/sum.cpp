@@ -17,7 +17,7 @@
 using namespace std;
 
 /*
- * 
+ * NOTE: THIS PROGRAM WORKS FOR ALL POSITIVE INTEGERS
  */
 int main(int argc, char** argv) {
     int lastDigit, remainingNumber,

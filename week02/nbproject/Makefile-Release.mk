@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/age.o \
+	${OBJECTDIR}/annuity.o \
 	${OBJECTDIR}/area.o \
 	${OBJECTDIR}/arithmetic.o \
 	${OBJECTDIR}/mark.o \
@@ -70,6 +71,11 @@ ${OBJECTDIR}/age.o: age.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/age.o age.cpp
+
+${OBJECTDIR}/annuity.o: annuity.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/annuity.o annuity.cpp
 
 ${OBJECTDIR}/area.o: area.cpp 
 	${MKDIR} -p ${OBJECTDIR}
